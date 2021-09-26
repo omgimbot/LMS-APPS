@@ -8,7 +8,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="10dp"
+        app:cardCornerRadius="5dp"
         app:cardElevation="2dp"
         app:cardUseCompatPadding="true">
 
@@ -67,7 +67,7 @@
                                 android:id="@+id/mJudul"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Nama Pupuk"
+                                android:text="Nama"
                                 android:textSize="16sp"
                                 android:textStyle="bold" />
 
@@ -75,7 +75,7 @@
                                 android:id="@+id/mJenis"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Pengajuan judul"
+                                android:text="judul"
                                 android:textColor="@color/color_default_blue"
                                 android:textSize="15sp" />
 
@@ -114,6 +114,7 @@
                         android:layout_marginBottom="5dp"
                         android:background="@drawable/doted_line"
                         android:layerType="software" />
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -140,13 +141,14 @@
                         </LinearLayout>
 
                     </LinearLayout>
+
                     <RelativeLayout
-                        android:visibility="gone"
                         android:id="@+id/layoutDownload"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:paddingRight="10dp">
+                        android:paddingRight="10dp"
+                        android:visibility="gone">
 
                         <Button
                             android:id="@+id/mDownloadFile"
@@ -161,8 +163,8 @@
                             android:textSize="12sp" />
 
                     </RelativeLayout>
-                </LinearLayout>
 
+                </LinearLayout>
 
             </LinearLayout>
 

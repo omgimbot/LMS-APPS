@@ -10,12 +10,13 @@
     <include layout="@layout/toolbar_default_in" />
 
     <LinearLayout
-        android:layout_marginLeft="10dp"
-        android:layout_width="230dp"
+        android:layout_width="match_parent"
         android:layout_height="48dp"
+        android:layout_margin="15dp"
         android:background="@drawable/shape_spinner"
         android:gravity="center"
         android:orientation="horizontal">
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -27,8 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="20dp"
-            android:textColor="@color/color_default_black"
-          />
+            android:textColor="@color/color_default_black" />
 
     </LinearLayout>
 
@@ -67,7 +67,7 @@
                         android:layout_centerVertical="true"
                         android:layout_gravity="center_vertical"
                         android:padding="8dp"
-                        app:srcCompat="@drawable/ic_book" />
+                        app:srcCompat="@drawable/ic_backpack" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -96,7 +96,6 @@
                             android:textColor="@color/c_black"
                             android:textSize="12dp" />
 
-
                     </LinearLayout>
 
                 </RelativeLayout>
@@ -109,78 +108,77 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/data2"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:foreground="?android:attr/selectableItemBackground"
-    app:cardCornerRadius="5dp"
-    app:cardUseCompatPadding="true">
-
-    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:weightSum="1">
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="5dp"
+        app:cardUseCompatPadding="true">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:weightSum="1">
 
-            <RelativeLayout
-                android:id="@+id/main_layout"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="10dp">
 
-                <ImageView
-                    android:id="@+id/icon_image"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_alignParentStart="false"
-                    android:layout_centerVertical="true"
-                    android:layout_gravity="center_vertical"
-                    android:padding="8dp"
-                    app:srcCompat="@drawable/ic_book" />
-
-                <LinearLayout
+                <RelativeLayout
+                    android:id="@+id/main_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="10dp"
-                    android:layout_toRightOf="@id/icon_image"
-                    android:gravity="center_vertical"
-                    android:orientation="vertical"
-                    android:padding="3dp">
+                    android:gravity="center"
+                    android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/mNama"
+                    <ImageView
+                        android:id="@+id/icon_image"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentStart="false"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:padding="8dp"
+                        app:srcCompat="@drawable/ic_backpack" />
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:maxLines="1"
-                        android:text="Materi Pembelajaran Matematika"
-                        android:textSize="15dp" />
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toRightOf="@id/icon_image"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:padding="3dp">
 
-                    <TextView
-                        android:id="@+id/mDeskripsi"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:maxLines="1"
-                        android:text="materi ini untung memahami aljabar"
-                        android:textColor="@color/c_black"
-                        android:textSize="12dp" />
+                        <TextView
+                            android:id="@+id/mNama"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="Materi Pembelajaran Matematika"
+                            android:textSize="15dp" />
 
+                        <TextView
+                            android:id="@+id/mDeskripsi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="materi ini untung memahami aljabar"
+                            android:textColor="@color/c_black"
+                            android:textSize="12dp" />
 
-                </LinearLayout>
+                    </LinearLayout>
 
-            </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
 
         </LinearLayout>
 
-    </LinearLayout>
-
-</androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/data3"
@@ -217,7 +215,7 @@
                         android:layout_centerVertical="true"
                         android:layout_gravity="center_vertical"
                         android:padding="8dp"
-                        app:srcCompat="@drawable/ic_book" />
+                        app:srcCompat="@drawable/ic_backpack" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -246,18 +244,16 @@
                             android:textColor="@color/c_black"
                             android:textSize="12dp" />
 
-
                         <Button
-                            android:layout_marginTop="3dp"
                             android:id="@+id/addMt"
-                            android:layout_width="105dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="25dp"
+                            android:layout_marginTop="3dp"
                             android:layout_marginRight="20dp"
                             android:background="@drawable/btnrounded_blue"
-                            android:text="mulai"
+                            android:text="mulai video"
                             android:textColor="@color/white"
-                            android:textSize="10sp" />
-
+                            android:textSize="12sp" />
 
                     </LinearLayout>
 

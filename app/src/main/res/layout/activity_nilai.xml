@@ -41,7 +41,7 @@
                         android:layout_height="50dp"
                         android:layout_gravity="center_vertical"
                         android:padding="5dp"
-                        app:srcCompat="@drawable/ic_book" />
+                        app:srcCompat="@drawable/ic_backpack" />
 
                     <LinearLayout
                         android:id="@+id/layoutList"
@@ -78,7 +78,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Pengajar : "
-                                android:textColor="@color/color_default_blue"
+                                android:textColor="@color/blue_violet"
                                 android:textSize="12sp" />
 
                             <TextView
@@ -86,7 +86,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Adi Permana, S.kom , M.kom"
-                                android:textColor="@color/color_default_blue"
+                                android:textColor="@color/blue_violet"
                                 android:textSize="12sp" />
 
                         </LinearLayout>
@@ -115,12 +115,8 @@
                         android:layout_height="25dp"
                         android:background="@drawable/button_confirm"
                         android:text="detail"
-                        android:textAllCaps="false"
                         android:textColor="@color/blue"
                         android:textSize="12sp" />
-
-
-
 
                 </LinearLayout>
 
@@ -163,7 +159,7 @@
                         android:layout_height="50dp"
                         android:layout_gravity="center_vertical"
                         android:padding="5dp"
-                        app:srcCompat="@drawable/ic_book" />
+                        app:srcCompat="@drawable/ic_backpack" />
 
                     <LinearLayout
                         android:id="@+id/layoutList"
@@ -200,7 +196,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Pengajar : "
-                                android:textColor="@color/color_default_blue"
+                                android:textColor="@color/blue_violet"
                                 android:textSize="12sp" />
 
                             <TextView
@@ -208,7 +204,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Atox , S.kom , M.kom"
-                                android:textColor="@color/color_default_blue"
+                                android:textColor="@color/blue_violet"
                                 android:textSize="12sp" />
 
                         </LinearLayout>
@@ -237,12 +233,8 @@
                         android:layout_height="25dp"
                         android:background="@drawable/button_confirm"
                         android:text="detail"
-                        android:textAllCaps="false"
                         android:textColor="@color/blue"
                         android:textSize="12sp" />
-
-
-
 
                 </LinearLayout>
 

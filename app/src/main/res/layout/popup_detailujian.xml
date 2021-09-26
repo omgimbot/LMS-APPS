@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_gravity="center"
     android:layout_margin="3dp"
     app:cardCornerRadius="5dp"
     app:cardElevation="3dp"
     app:cardMaxElevation="0dp"
     app:cardUseCompatPadding="false">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/grey"
+        android:background="@color/grey_3"
+        android:paddingBottom="25dp"
         android:orientation="vertical">
 
         <RelativeLayout
@@ -46,35 +44,32 @@
                 android:layout_toRightOf="@+id/mClose"
                 android:gravity="center_vertical"
                 android:text="Detail Ujian"
-                android:textSize="16sp"
+                android:textSize="15sp"
                 android:textStyle="bold" />
-
 
         </RelativeLayout>
 
         <LinearLayout
+            android:id="@+id/mainLayouts"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/toolbar"
             android:gravity="center_vertical"
             android:orientation="vertical">
 
-
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:padding="3dp">
 
                 <LinearLayout
                     android:id="@+id/main_layout"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-                        xmlns:app="http://schemas.android.com/apk/res-auto"
-                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -95,7 +90,6 @@
                                 android:layout_height="match_parent"
                                 android:layout_centerVertical="true"
                                 android:layout_marginStart="10dp"
-                                android:layout_toRightOf="@id/icon_image"
                                 android:gravity="center_vertical"
                                 android:orientation="horizontal"
                                 android:padding="3dp">
@@ -108,30 +102,27 @@
                                     android:maxLines="1"
                                     android:text="Ujian"
                                     android:textColor="@color/midnight_blue"
-                                    android:textSize="15dp"
+                                    android:textSize="12sp"
                                     android:textStyle="bold" />
-
 
                                 <TextView
                                     android:id="@+id/mTotal"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_alignParentRight="true"
-                                    android:layout_toRightOf="@+id/labelTotal"
                                     android:maxLines="3"
                                     android:text="Ujian Matematika"
                                     android:textAlignment="textEnd"
                                     android:textColor="@color/midnight_blue"
-                                    android:textSize="20dp" />
-
+                                    android:textSize="12sp" />
 
                             </RelativeLayout>
 
                             <View
                                 android:layout_width="match_parent"
                                 android:layout_height="1dp"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
                                 android:background="@color/grey" />
 
                             <RelativeLayout
@@ -150,32 +141,28 @@
                                     android:gravity="center_vertical"
                                     android:maxLines="1"
                                     android:text="Kode Ujian"
-                                    android:textSize="13dp"
+                                    android:textSize="12sp"
                                     android:textStyle="bold" />
-
 
                                 <TextView
                                     android:id="@+id/mOrderId"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_alignParentRight="true"
-                                    android:layout_toRightOf="@+id/mJumlah"
                                     android:gravity="center_vertical"
                                     android:maxLines="3"
                                     android:text="MTK-39001DI"
                                     android:textAlignment="textEnd"
-                                    android:textSize="10sp"
+                                    android:textSize="12sp"
                                     tools:ignore="RtlCompat" />
 
-
                             </RelativeLayout>
+
                         </LinearLayout>
 
                     </androidx.cardview.widget.CardView>
 
-                    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-                        xmlns:app="http://schemas.android.com/apk/res-auto"
-                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    <androidx.cardview.widget.CardView
                         android:id="@+id/card_view"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -201,39 +188,31 @@
                                 android:padding="2dp">
 
                                 <TextView
-                                    android:id="@+id/labelProduk"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:maxLines="1"
                                     android:text="Pengajar"
-                                    android:textSize="15dp"
+                                    android:textSize="12sp"
                                     android:textStyle="bold" />
 
                                 <TextView
-                                    android:textColor="@drawable/blue_button_background"
-                                    android:id="@+id/mOrderId"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_alignParentRight="true"
-                                    android:layout_toRightOf="@+id/mJumlah"
                                     android:gravity="center_vertical"
                                     android:maxLines="3"
-                                    android:text="Adi Permana, S.kom, M.kom"
+                                    android:text="Baharudin, S.kom, M.kom"
                                     android:textAlignment="textEnd"
-                                    android:textSize="10sp"
+                                    android:textSize="12sp"
                                     tools:ignore="RtlCompat" />
 
                             </RelativeLayout>
-
 
                         </RelativeLayout>
 
                     </androidx.cardview.widget.CardView>
 
-                    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-                        xmlns:app="http://schemas.android.com/apk/res-auto"
-                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                        android:id="@+id/card_view"
+                    <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -263,35 +242,27 @@
                                     android:layout_height="wrap_content"
                                     android:maxLines="1"
                                     android:text="Tanggal Mulai"
-                                    android:textSize="15dp"
+                                    android:textSize="12sp"
                                     android:textStyle="bold" />
 
-
                                 <TextView
-                                    android:id="@+id/mOrderId"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_alignParentRight="true"
-                                    android:layout_toRightOf="@+id/mJumlah"
-                                    android:gravity="center_vertical"
+                                    android:gravity="end"
                                     android:maxLines="3"
                                     android:text="24 September 2021"
                                     android:textAlignment="textEnd"
-                                    android:textSize="10sp"
+                                    android:textSize="12sp"
                                     tools:ignore="RtlCompat" />
 
-
                             </RelativeLayout>
-
 
                         </RelativeLayout>
 
                     </androidx.cardview.widget.CardView>
 
-                    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-                        xmlns:app="http://schemas.android.com/apk/res-auto"
-                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                        android:id="@+id/card_view"
+                    <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -308,16 +279,19 @@
                             android:gravity="center"
                             android:orientation="vertical">
 
-                            <RelativeLayout
+                            <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_centerVertical="true"
                                 android:layout_marginStart="10dp"
-                                android:padding="2dp">
+                                android:orientation="horizontal"
+                                android:padding="2dp"
+                                android:weightSum="2">
 
                                 <LinearLayout
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:layout_weight="1"
                                     android:orientation="vertical">
 
                                     <TextView
@@ -326,74 +300,53 @@
                                         android:layout_height="wrap_content"
                                         android:maxLines="1"
                                         android:text="Jam Mulai"
-                                        android:textSize="15dp"
+                                        android:textSize="12sp"
                                         android:textStyle="bold" />
 
                                     <TextView
-                                        android:textColor="@color/black"
                                         android:id="@+id/mJmlhBeli"
                                         android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
+                                        android:layout_height="0dp"
                                         android:layout_weight="1"
                                         android:maxLines="10"
                                         android:text="08:00"
-                                        android:textSize="12dp"
-                                        android:textStyle="bold|italic" />
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
 
                                 </LinearLayout>
 
                                 <LinearLayout
-                                    android:layout_alignParentEnd="true"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:layout_weight="1"
                                     android:orientation="vertical">
 
                                     <TextView
-                                        android:id="@+id/labelStatusBarang"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:maxLines="1"
                                         android:text="Jam Selesai"
-                                        android:textSize="15dp"
+                                        android:textSize="12sp"
                                         android:textStyle="bold" />
 
                                     <TextView
-                                        android:textColor="@color/black"
-                                        android:textAlignment="textEnd"
-                                        android:id="@+id/mJmlhBeli"
                                         android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
+                                        android:layout_height="0dp"
                                         android:layout_weight="1"
                                         android:maxLines="10"
                                         android:text="11:00"
-                                        android:textSize="12dp"
-                                        android:textStyle="bold|italic" />
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
 
                                 </LinearLayout>
 
-
-                            </RelativeLayout>
-
+                            </LinearLayout>
 
                         </RelativeLayout>
 
                     </androidx.cardview.widget.CardView>
-
-
-                    <!--                    <RelativeLayout-->
-                    <!--                        android:layout_width="match_parent"-->
-                    <!--                        android:layout_height="wrap_content"-->
-                    <!--                        android:gravity="center"-->
-                    <!--                        android:orientation="vertical">-->
-
-                    <!--                        <ImageView-->
-                    <!--                            android:alpha="0.3"-->
-                    <!--                            android:background="@color/grey"-->
-                    <!--                            android:layout_width="match_parent"-->
-                    <!--                            android:layout_height="match_parent"-->
-                    <!--                            android:src="@drawable/iconkpb"></ImageView>-->
-                    <!--                    </RelativeLayout>-->
-
 
                 </LinearLayout>
 
@@ -404,16 +357,19 @@
         <TextView
             android:id="@+id/mBtnIkutUjian"
             android:layout_width="match_parent"
-            android:layout_height="?android:attr/actionBarSize"
-            android:layout_alignParentBottom="true"
+            android:layout_height="35dp"
+            android:layout_below="@id/mainLayouts"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
             android:background="@drawable/button_blue"
             android:gravity="center"
             android:text="Ikuti Ujian"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="20dp"
-            android:textStyle="bold"></TextView>
-
+            android:textSize="15sp"
+            android:textStyle="bold" />
 
     </RelativeLayout>
+
 </androidx.cardview.widget.CardView>

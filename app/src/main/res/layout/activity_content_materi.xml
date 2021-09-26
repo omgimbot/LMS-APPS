@@ -8,6 +8,7 @@
     tools:context="omgimbot.app.lsmapps.features.materi.ContentMateriActivity">
 
     <include layout="@layout/toolbar_default_in" />
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,13 +20,16 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
             <com.borjabravo.readmoretextview.ReadMoreTextView
                 android:id="@+id/text_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:trimMode="trimModeLine"
                 app:trimLines="50"
-              ></com.borjabravo.readmoretextview.ReadMoreTextView>
+                app:trimMode="trimModeLine" />
+
         </LinearLayout>
+
     </androidx.cardview.widget.CardView>
+
 </LinearLayout>

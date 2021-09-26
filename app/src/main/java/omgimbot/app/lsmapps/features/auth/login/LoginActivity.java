@@ -56,7 +56,6 @@ public class LoginActivity extends AppCompatActivity implements ILoginView {
         } else {
             this.initViews();
         }
-
     }
 
     @Override
@@ -74,7 +73,6 @@ public class LoginActivity extends AppCompatActivity implements ILoginView {
         } else if (response.getResult().getRole().equals("MAHASISWA")) {
             this.goToDashboardMhs();
         }
-
     }
 
     @Override
